@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-4">
-                    <div class="logo"><a href="https://khamphadisan.com.vn"><img width="498" height="116"
+                    <div class="logo"><a href="http://127.0.0.1:5500/views/index.html"><img width="498" height="116"
                                 alt="Khám phá di sản"
                                 data-src="https://khamphadisan.com.vn/wp-content/uploads/2016/08/logo.png"
                                 class=" ls-is-cached lazyloaded"
@@ -44,14 +45,6 @@
                                     width="498" height="116"
                                     src="https://khamphadisan.com.vn/wp-content/uploads/2016/08/logo.png"
                                     alt="Khám phá di sản"></noscript></a></div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-8">
-                    <a rel="nofollow" href="https://takimedia.com/takirich/do.php?lebox-go=61de4b351aec79.37163070"
-                        target="_blank" class="lebox-ready" data-campaign-id="3" data-id="97" data-width="728"
-                        data-height="90" title="Mã giảm giá lazada"><img
-                            src="https://takimedia.com/takirich/content/data/green-box/728X90.png"
-                            alt="Mã giảm giá lazada" width="728" height="90"
-                            style="width: 692px; height: 85px; line-height: 85px;"></a>
                 </div>
             </div>
         </div>
@@ -63,15 +56,26 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#">TRANG CHỦ<span class="sr-only">(current)</span></a>
+                            <!-- <a class="nav-link" href="#">TRANG CHỦ<span class="sr-only">(current)</span></a> -->
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">KINH NGHIỆM DU LỊCH <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">KHÁM PHÁ VIỆT NAM</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropbtn" href="#">KHÁM PHÁ VIỆT NAM</a>
+                            <div class="dropdown-content">
+                                <a href="#">Địa điểm hấp dẫn</a>
+                                <a href="#">Lễ hội việt nam</a>
+                                <a href="#">Ẩm thực việt nam</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">DI SẢN</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropbtn" href="#">DI SẢN</a>
+                            <div class="dropdown-content">
+                                <a href="#">Di sản tư liệu</a>
+                                <a href="#">Di sản vật thể</a>
+                                <a href="#">Di sản phi vật thể</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -670,5 +674,11 @@
         <p class="copyr">Bản quyền thuộc về www.khamphadisan.com.vn - Vận hành bởi Taki Media</p>
     </footer>
 </body>
-
+<script language="JavaScript" type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').carousel({
+        interval: 1000
+      })
+    });    
+  </script>
 </html>
